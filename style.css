@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: beige;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu .logo{
+    font-weight: 800;
+    font-size: 25px;
+    color: #3467f8;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #152056;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #3467f8;
+}
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.Definicion {
+    display: flex;
+    align-items: right;
+    margin-top: 150px;
+}
+.Indice{
+    width: 100%;
+}
+.Indice h1{
+    font-size: 55px;
+    font-weight: 800;
+    color: #152056;
+}
+.Indice h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: aqua;
+    margin-bottom: 40px;
+}
+.Indice.p
+{
+    display: none;
+}
+.definicion{
+    font-size: 20px;
+    font-weight: 200;
+}
+.elementos h2{
+    color: aqua;
+    margin-bottom: 40px;
+    width: 90%;
+}
+.elementos p{
+    font-size: 20px;
+    font-weight: 200;
+}
+.entropiayneguentropia h2{
+    color: aqua;
+    margin-bottom: 40px;
+    width: 90%;
+}
+.entropiayneguentropia p{
+    font-size: 20px;
+    font-weight: 200;
+}
+.componentes h2{
+    color: aqua;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.componentes p{
+    font-size: 20px;
+    font-weight: 200;
+}
+.identificacion h2{
+    color: aqua;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.identificacion p{
+    font-size: 20px;
+    font-weight: 200;
+}
+.relacion h2{
+    color: aqua;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.relacion p{
+    font-size: 20px;
+    font-weight: 200;
+}
+.ejemplos h2{
+    color: aqua;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.ejemplos p{
+    font-size: 20px;
+    font-weight: 200;
+}
+.pie{
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.pie p{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    color: aquamarine;
+}
+
+@media(max-width:2000px){
+
+    .menu{
+        padding: 20px;
+
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #132ca8;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a {
+        color: aliceblue;
+    }
+    .menu .navbar ul li a:hover{
+        color: #bebebe;
+    } 
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
